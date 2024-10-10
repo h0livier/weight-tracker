@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/weight-tracker",
+    basePath: "/",
     output: "export",  // <=== enables static exports
     reactStrictMode: true,
 };
