@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/",
-    output: "export",  // <=== enables static exports
+    basePath: "",
     reactStrictMode: true,
 };
 
