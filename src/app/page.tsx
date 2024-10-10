@@ -6,19 +6,14 @@ export default async function Home() {
 	return <Login />
 }
 
-export function Login() {
+async function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { login } = useAuth();
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    try {
-      await login(email, password);
-      alert('Connexion réussie !');
-    } catch (error: any) {
-      alert(error.message);
-    }
+  const handleSubmit = async () => {
+	await login(email, password);
+	alert('Connexion réussie !');
   };
 
   return (
